@@ -1,0 +1,30 @@
+.textbox {
+    /* width: fit-content;
+    margin-left: -3.7rem; */
+    margin-top: 4px;
+    place-content: center;
+    margin-bottom: 1rem;
+  }
+  .register-title {
+    display: grid;
+    font-size: 4rem;
+    color: #543936;
+    margin-bottom: 2rem;
+  }
+
+.reg-button{
+  margin-top: 2rem;
+}
+
+  .form-container {
+    display: grid;
+    border: 0px solid lightslategray;
+    border-radius: 10px;
+    margin: 4rem auto auto auto;
+    height: 40rem;
+    width:30rem;
+    place-items: center;
+    place-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }

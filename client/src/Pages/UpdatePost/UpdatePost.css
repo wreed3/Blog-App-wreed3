@@ -1,0 +1,48 @@
+.update-post-container {
+    display: grid;
+    border: 0px solid lightslategray;
+    border-radius: 10px;
+    margin: 4rem auto auto auto;
+    height: 40rem;
+    width:50rem;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.update-title {
+    display: grid;
+    font-size: 4rem;
+    color: #543936;
+      
+}
+
+.update-title-title{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    width: 45rem;
+    height: 5rem;
+}
+
+
+.update-text {
+   margin-bottom: 1rem;
+    width: 45rem;
+    height: 10rem;
+}
+
+.update-username {
+    display: grid;
+    /* margin-top: 1rem; */
+
+}
+
+.update-button {
+    display: grid;
+    grid-template-rows: [ro1] 100% ;
+    margin-top: 1rem;
+    width: 45rem;
+    place-content: center;
+}

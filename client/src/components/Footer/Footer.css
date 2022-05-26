@@ -1,0 +1,35 @@
+.footer-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    place-content: center;
+  }
+  
+  .footer-bar{
+    display: grid;
+    opacity: 0.9;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    align-content: start;
+  
+  
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: [col1-start] 25% [col2-start] 25% [col3-end] 30% [col4-end] 5%;
+    justify-content: space-around;
+    background-color: #543936;
+    opacity: 0.9;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    width: 100;
+    white-space: nowrap;
+    align-content: center;
+    color: white;
+  }

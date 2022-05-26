@@ -1,0 +1,87 @@
+.nav-bar {
+    display: flex;
+    /* grid-template-columns: [col1-start] 30% [col2-start] 8% [col3-end] 15% [col4-end] 5%; */
+    justify-content: space-evenly;
+    background-color: #543936;
+    height: 7rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: nowrap;
+    align-content: flex-start;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #f7f6eb;
+    display: grid;
+    justify-items: start;
+    padding: 10px;
+    justify-content: start;
+    align-content: center;
+    white-space: nowrap;
+    transition: color 1s ease-out 100ms;
+    transition: transform 250ms;
+  }
+  
+  .title:hover {
+    cursor: pointer;
+    color: white;
+    transform: translateY(-10px);
+  }
+  
+  .links {
+    color: #f7f6eb;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    white-space: nowrap;
+    
+  }
+
+  .nav-link1 {
+    padding: 20px;
+  }
+  
+  .nav-link1:hover {
+    cursor: pointer;
+    color: white;
+    font-size: large;
+
+  }
+  .nav-link2:hover {
+    cursor: pointer;
+    color: white;
+    font-size: large;
+  
+  }
+  
+  .nav-link2 {
+    padding: 20px;
+  }
+
+  .login-nav {
+    display: grid;
+    color: #f7f6eb;
+    place-content: center;
+    transition: color 2s ease-out 100ms;
+    transition: transform 250ms;
+  }
+
+  button {
+    color: black;
+    border-style: none;
+    
+    border-radius: 5px;
+    background-color: #f7f6eb;; 
+  }
+  
+  .login-nav:hover {
+    color: white;
+    cursor: pointer;
+    font-size: x-large;
+    transform: translateY(-10px);
+  }

@@ -1,0 +1,86 @@
+.container {
+  display: grid;
+  grid-template-columns: [col1] auto [col2] auto [col3] auto;
+  grid-auto-flow: row;
+  grid-gap: 5rem 3rem;
+  margin-top: 1rem;
+  padding: 5rem;
+  place-items: center;
+  place-content: center;
+  text-align: center;
+  word-wrap: break-word;
+  margin-bottom: 5rem;
+}
+
+.card-container {
+  display: grid;
+  flex: 1;
+  place-content: center;
+  place-items: center;
+  box-sizing: border-box;
+  max-lines: 5;
+
+
+
+}
+
+.card {
+    display: grid;
+    grid-template-rows: [row1] auto [row2] auto [row3] 10%;
+    flex: 1;
+    border: 0px solid lightslategray;
+    border-radius: 10px;
+    margin-top: 2rem;
+    margin: 5px;
+    min-height: 30rem;
+    max-height: 30rem;
+    min-width: 20rem;
+
+    justify-items: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    transition: transform 250ms;
+    max-lines: 5;
+    overflow: hidden;
+   
+  }
+  .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transform: translateY(-10px);
+    cursor: pointer;
+  }
+  
+  .card-title {
+    display: grid;
+    margin: 1.2em;
+    overflow: hidden;
+    
+  }
+  
+  .blurb {
+    padding: 2rem;
+    max-height: 15rem;
+    text-align: center;
+    overflow: hidden;
+   
+  }
+
+
+  .card-button {
+    display: grid;
+    margin-bottom: .5rem;
+    direction: rtl;
+    border-radius: 10px;
+    height: 1.5rem;
+    border: 0;
+    color: black;
+    font-size: small;
+    place-content: center;
+  }
+
+  .card-button:hover {
+    color: #543936;
+    font-size: medium;
+    cursor: pointer;
+    
+  }
