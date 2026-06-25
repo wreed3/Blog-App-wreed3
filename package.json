@@ -1,0 +1,27 @@
+{
+  "name": "blog-app-wreed3",
+  "version": "1.0.0",
+  "description": "Full-stack blog application with React frontend and Express backend",
+  "main": "server/app.js",
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "test": "cd client && npm test",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "blog",
+    "react",
+    "express",
+    "mysql",
+    "fullstack"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
