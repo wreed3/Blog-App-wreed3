@@ -4,13 +4,13 @@
   "description": "Full-stack blog application with React frontend and Express backend",
   "main": "server/app.js",
   "scripts": {
-    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm start",
+    "postinstall": "cd client && npm install && cd ../server && npm install",
+    "start": "cd server && npm start",
     "client": "cd client && npm start",
+    "server": "cd server && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "build": "cd client && npm run build",
-    "test": "cd client && npm test",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "test": "cd client && npm test"
   },
   "keywords": [
     "blog",
