@@ -1,4 +1,120 @@
-.searchBar {
-  display: grid;
+.search-bar {
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
   align-items: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 1rem 3rem 1rem 1.25rem;
+  font-size: 1rem;
+  border: 2px solid var(--color-input-border);
+  border-radius: 50px;
+  background-color: var(--color-input-bg);
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: var(--color-input-focus);
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+}
+
+.search-input::placeholder {
+  color: var(--color-text-tertiary);
+}
+
+.search-icon {
+  position: absolute;
+  right: 1.25rem;
+  color: var(--color-text-tertiary);
+  pointer-events: none;
+  font-size: 1.25rem;
+}
+
+.search-button {
+  position: absolute;
+  right: 0.5rem;
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+  border: none;
+  border-radius: 50px;
+  padding: 0.625rem 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: var(--color-button-hover);
+  transform: scale(1.05);
+}
+
+.search-button:active {
+  transform: scale(0.98);
+}
+
+.search-results {
+  margin-top: 1rem;
+  color: var(--color-text-secondary);
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.search-clear {
+  position: absolute;
+  right: 3.5rem;
+  background: transparent;
+  border: none;
+  color: var(--color-text-tertiary);
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.search-clear:hover {
+  color: var(--color-error);
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .search-bar {
+    margin: 1.5rem auto;
+  }
+
+  .search-input {
+    padding: 0.875rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .search-button {
+    position: static;
+    width: 100%;
+    margin-top: 0.75rem;
+    border-radius: 8px;
+  }
+
+  .search-container {
+    flex-direction: column;
+  }
+
+  .search-icon {
+    right: 1rem;
+  }
+
+  .search-clear {
+    right: 1rem;
+  }
 }
